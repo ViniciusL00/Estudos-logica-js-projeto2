@@ -38,20 +38,20 @@ A manipulação do conteúdo usando innerHTML altera o HTML do elemento selecion
 **Passos:**
 1- No HTML: Criamos um botão com a tag <button> e adicionamos o atributo onclick para chamar a função quando o botão for clicado.   
 
-**Exemplo de código HTML:** <button onclick="verificarChute()">Chutar</button>
+    **Exemplo de código HTML:** <button onclick="verificarChute()">Chutar</button>
 
 2- No JavaScript: Criamos a função verificarChute() que será chamada quando o botão for clicado. Dentro dessa função, podemos definir o que deve acontecer quando o evento ocorrer.
 
-**Exemplo de código JavaScript:** function verificarChute() {
-    console.log('O botão foi clicado!');
+    **Exemplo de código JavaScript:** function verificarChute() {
+        console.log('O botão foi clicado!');
 }
 
-**Explicação:** 1- HTML: O atributo onclick="verificarChute()" vincula o evento de clique do botão à função verificarChute(). Ou seja, quando o botão for clicado, a função será executada.
+        **Explicação:** 1- HTML: O atributo onclick="verificarChute()" vincula o evento de clique do botão à função verificarChute(). Ou seja, quando o botão for clicado, a função será executada.
 
-2- JavaScript:     1- A função verificarChute() é definida utilizando a palavra-chave function.
+        2- JavaScript:     1- A função verificarChute() é definida utilizando a palavra-chave function.
 
-2- Dentro da função, o comando console.log('O botão foi clicado!') exibe uma mensagem no console sempque o botão é clicado.
-Dessa forma, ao clicar no botão, a função será executada e a mensagem será exibida no console.
+        2- Dentro da função, o comando console.log('O botão foi clicado!') exibe uma mensagem no console sempque o botão é clicado.
+        Dessa forma, ao clicar no botão, a função será executada e a mensagem será exibida no console.
 
 **O que é uma função?** Uma função em JavaScript é um bloco de código que pode ser reutilizado em várias partes do seu programa. Ela pode ser chamada a partir de diferentes pontos no código para realizar uma tarefa específica.
 
