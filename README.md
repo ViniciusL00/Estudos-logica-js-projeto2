@@ -48,7 +48,7 @@ A manipulação do conteúdo usando innerHTML altera o HTML do elemento selecion
 
 **Explicação:** 1- HTML: O atributo onclick="verificarChute()" vincula o evento de clique do botão à função verificarChute(). Ou seja, quando o botão for clicado, a função será executada.
 
-2- JavaScript: 1- A função verificarChute() é definida utilizando a palavra-chave function.
+2- JavaScript:     1- A função verificarChute() é definida utilizando a palavra-chave function.
 
             2- Dentro da função, o comando console.log('O botão foi clicado!') exibe uma mensagem no console sempre que o botão é clicado.
 Dessa forma, ao clicar no botão, a função será executada e a mensagem será exibida no console.
