@@ -2,7 +2,9 @@
  Estudos - Lógica de Programação com JavaScript (Projeto 2)
  
  1- Primeira aula: Manipulação de textos.
+
 **Objetivo:** Aprender a manipular textos no HTML utilizando JavaScript.
+
 **Descrição:** Nesta aula, vamos aprender a modificar o conteúdo de elementos HTML usando JavaScript, ao invés de editar diretamente o código HTML. Como exemplo, vamos alterar o texto de um título (h1) e de um parágrafo (p) na página.
 
 **Exemplo:** 
@@ -38,7 +40,9 @@ A explicação é a mesma do exemplo anterior, com o objetivo de modificar o con
     A manipulação do conteúdo usando innerHTML altera o HTML do elemento selecionado. Contudo, em alguns casos, pode ser interessante usar outras propriedades como textContent para evitar problemas de segurança (como injeção de HTML indesejado).
 
 2- Segunda aula: Criando uma função.
+
 **Objetivo:** Aprender a criar uma função em JavaScript e vinculá-la a um evento de clique em um botão no HTML.
+
 **Descrição:** Nesta aula, vamos aprender a criar uma função JavaScript que será chamada quando o botão "Chutar" for clicado. Para isso, no HTML, vamos usar a tag <button> e associar um evento onclick à função criada em JavaScript.
 
 **Passos:**
@@ -65,7 +69,8 @@ A explicação é a mesma do exemplo anterior, com o objetivo de modificar o con
 
 **O que é uma função?** Uma função em JavaScript é um bloco de código que pode ser reutilizado em várias partes do seu programa. Ela pode ser chamada a partir de diferentes pontos no código para realizar uma tarefa específica.
 
-**Sintaxe básica de uma função:** function nomeDaFuncao() {
-    // código a ser executado
-}
+**Sintaxe básica de uma função:** 
+    function nomeDaFuncao() {
+        // código a ser executado
+    }
 No caso do exemplo acima, verificarChute() é o nome da função, e dentro dela colocamos o código que será executado sempre que ela for chamada.
