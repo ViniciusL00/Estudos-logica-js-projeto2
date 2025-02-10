@@ -42,22 +42,25 @@ A explicação é a mesma do exemplo anterior, com o objetivo de modificar o con
 
 **Objetivo:** Aprender a criar uma função em JavaScript e vinculá-la a um evento de clique em um botão no HTML.
 
-**Descrição:** Nesta aula, vamos aprender a criar uma função JavaScript que será chamada quando o botão "Chutar" for clicado. Para isso, no HTML, vamos usar a tag <button> e associar um evento onclick à função criada em JavaScript.
+**Descrição:** Nesta aula, vamos aprender a criar uma função JavaScript que será chamada quando o botão "Chutar" for clicado. Para isso, no HTML, vamos usar a tag button e associar um evento onclick à função criada em JavaScript.
 
 **Passos:**
-1- No HTML: Criamos um botão com a tag <button> e adicionamos o atributo onclick para chamar a função quando o botão for clicado.   
+1- No HTML: Criamos um botão com a tag button e adicionamos o atributo onclick para chamar a função quando o botão for clicado.   
 
 **Exemplo de código HTML:** 
+
     <button onclick="verificarChute()">Chutar</button>
 
 2- No JavaScript: Criamos a função verificarChute() que será chamada quando o botão for clicado. Dentro dessa função, podemos definir o que deve acontecer quando o evento ocorrer.
 
-**Exemplo de código JavaScript:** 
+**Exemplo de código JavaScript:**
+
     function verificarChute() {
     console.log('O botão foi clicado!');
 }
 
 **Explicação:**  
+
     HTML: O atributo onclick="verificarChute()" vincula o evento de clique do botão à função verificarChute(). Ou seja, quando o botão for clicado, a função será executada.
 
 2- JavaScript: 
