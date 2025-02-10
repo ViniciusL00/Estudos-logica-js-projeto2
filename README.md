@@ -50,7 +50,7 @@ A manipulação do conteúdo usando innerHTML altera o HTML do elemento selecion
 
 2- JavaScript:     1- A função verificarChute() é definida utilizando a palavra-chave function.
 
-            2- Dentro da função, o comando console.log('O botão foi clicado!') exibe uma mensagem no console sempre que o botão é clicado.
+2- Dentro da função, o comando console.log('O botão foi clicado!') exibe uma mensagem no console sempque o botão é clicado.
 Dessa forma, ao clicar no botão, a função será executada e a mensagem será exibida no console.
 
 **O que é uma função?** Uma função em JavaScript é um bloco de código que pode ser reutilizado em várias partes do seu programa. Ela pode ser chamada a partir de diferentes pontos no código para realizar uma tarefa específica.
