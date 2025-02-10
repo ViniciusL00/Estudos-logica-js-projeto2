@@ -7,7 +7,6 @@
 
 **Exemplo:** 
     Suponha que temos o seguinte código HTML, onde temos um título em um h1.
-    <h1>Titulo original</h1>
 
 No JavaScript, vamos criar uma variável para selecionar o título e alterar seu conteúdo dinamicamente:
 
@@ -25,7 +24,7 @@ No JavaScript, vamos criar uma variável para selecionar o título e alterar seu
 **Exemplo 2: Alterando o Parágrafo.**
     Agora, vamos supor que temos o seguinte código HTML com um parágrafo:
     <p>Aqui está o paragrafo</p>
-    
+
 No JavaScript, vamos criar uma variável para selecionar o parágrafo e alternar o seu conteúdo:
 
     let paragrafo = document.querySelector('p');
