@@ -135,3 +135,85 @@ O return dentro da função faz com que, quando chamarmos a variável numeroSecr
     2- chute == numeroSecreto: Compara o valor do chute com o número secreto e retorna true (verdadeiro) se forem iguais, ou false (falso) se forem diferentes.
 
 Esse código exibe no console se o chute do usuário é correto, ou seja, se o valor inserido é igual ao número secreto.
+
+6- Sexta aula: Verificando o chute.
+**Objetivo:** O objetivo dessa aula é permitir que a máquina verifique o chute do usuário e forneça uma resposta adequada, informando se o usuário acertou ou não o número secreto.
+
+**Descrição:** A função verificarChute realiza a verificação do número fornecido pelo usuário. Se o usuário acertar o número secreto, uma mensagem de "Parabéns" será exibida. Caso contrário, o sistema informa se o número secreto é maior ou menor que o chute do usuário, ajudando-o a tentar novamente.
+
+**Comportamento esperado:** Se o usuário acertar o número secreto:
+Uma mensagem de sucesso é exibida:
+
+"Acertou!"
+"Parabéns, você descobriu o número secreto!"
+
+Se o usuário errar o número secreto:
+O sistema informa se o número secreto é:
+
+Menor ou maior que o número escolhido pelo usuário.
+
+**Exemplo:** se o usuario acertar o número secreto, irá aparecer a mensagem Acertou e embaixo, Parabéns você descobriu o número secreto.
+se o usuario errar, ira aparecer a mensagem o numero secreto é menor ou maior dependendo da escolha do usuario.
+
+    function verificarChute() {
+        let chute = document.querySelector('input').value;
+
+            // verifica se o chute está correto
+            if (chute == numeroSecreto){
+                exibirTextoNaTela('h1', 'Acertou!');
+                exibirTextoNaTela('p', 'Parabéns você descobriu o número secreto!');
+            } else {
+                // caso o chute seja maior ou menor
+                if (chute > numeroSecreto){
+                exibirTextoNaTela('p', 'O número secreto é menor');
+            } else {
+                exibirTextoNaTela('p', 'O número secreto é maior');
+            }
+        }
+    }
+
+**Explicação do Código:**
+
+1- Captura do Chute: A função começa capturando o valor inserido pelo usuário no campo de input.
+2- Verificação de Acerto: Se o chute for igual ao número secreto, a mensagem de acerto é exibida.
+3- Verificação de Erro: Caso contrário, o código verifica se o chute é maior ou menor que o número secreto e exibe a mensagem correspondente.
+
+7- Sétima aula: Contando tentativas.
+**Objetivo:** O objetivo dessa aula é contar quantas tentativas o usuário teve até descobrir o número secreto. Após o usuário acertar, será exibido o número total de tentativas feitas.
+
+**Descrição:**
+
+Nesta aula, adicionaremos uma variável para controlar o número de tentativas. A cada vez que o usuário errar o número secreto, a variável será incrementada. Quando o usuário acertar, o sistema mostrará quantas tentativas foram necessárias para chegar à resposta correta.
+
+**Comportamento esperado:** 
+
+1- Quando o usuário acertar o número secreto: O sistema exibirá uma mensagem parabenizando o usuário, incluindo o número total de tentativas feitas.
+Exemplo de mensagem: "Parabéns, você descobriu o número secreto com X tentativas!"
+
+2- Quando o usuário errar: O sistema informará se o número secreto é maior ou menor que o chute e continuará contando as tentativas.
+
+**Exemplo de implementação:**
+
+    function verificarChute() {
+        let chute = document.querySelector('input').value;
+        
+        // Verifica se o chute está correto
+        if (chute == numeroSecreto) {
+            exibirTextoNaTela('h1', 'Acertou!');
+            
+            // Mensagem com a quantidade de tentativas
+            let palavraTentativa = tentativas > 1 ? 'Tentativas' : 'tentativa';
+            let mensagemTentativas = `Parabéns, você descobriu o número secreto com ${tentativas} ${palavraTentativa}!`;
+            exibirTextoNaTela('p', mensagemTentativas);
+        } else {
+            // Caso o chute seja maior ou menor
+            if (chute > numeroSecreto) {
+                exibirTextoNaTela('p', 'O número secreto é menor');
+            } else {
+                exibirTextoNaTela('p', 'O número secreto é maior');
+            }
+            
+            // Incrementa a contagem de tentativas
+            tentativas = tentativas + 1;
+        }
+    }
