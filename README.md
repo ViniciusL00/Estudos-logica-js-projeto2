@@ -76,3 +76,62 @@ A explicação é a mesma do exemplo anterior, com o objetivo de modificar o con
         // código a ser executado
     }
 No caso do exemplo acima, verificarChute() é o nome da função, e dentro dela colocamos o código que será executado sempre que ela for chamada.
+
+3- Terceira aula: Funções com parâmetros.
+
+**Objetivo:** Evitar a repetição de código utilizando funções.
+
+**Exemplo:** Vamos criar uma função chamada exibirTextoNaTela para simplificar a tarefa de alterar o conteúdo de diferentes elementos HTML.
+
+    function exibirTextoNatela(){
+    let campo = document.querySelector(tag, texto);
+    campo.innerHTML = texto;
+    }
+**Como funciona:**
+
+Com essa função, podemos passar a tag HTML e o texto como parâmetros, evitando a necessidade de criar várias variáveis e funções para cada tag que queremos alterar. Agora, podemos reutilizar a mesma função para exibir textos em diferentes partes da página.
+
+**Exemplo de uso:**
+
+    exibirTextoNaTela('h1', 'Jogo do Número Secreto');
+    exibirTextoNaTela('p', 'Escolha um número entre 1 a 100');
+
+Isso torna o código mais compacto, organizado e fácil de entender, já que não precisamos repetir a mesma lógica para cada novo elemento. O código fica mais limpo e fácil de manter.
+
+4- Quarta aula: Funções com retorno.
+
+**Objetivo:** Vamos criar uma função para gerar um número aleatorio para nosso jogo.
+
+**Exemplo:** Primeiro, precisamos criar uma variável que vai armazenar o número aleatório gerado pela função. Vamos começar criando a variável numeroSecreto e atribuindo o valor retornado pela função gerarNumeroAleatorio:
+
+    let numeroSecreto = gerarNumeroAleatorio();
+
+Agora, vamos criar a função gerarNumeroAleatorio que retorna um número aleatório entre 1 e 100.
+**O código da função será:**
+
+    function gerarNumeroAleatorio() {
+        return parseInt(Math.random() *100 +1);
+    }
+
+**Explicação:** 
+    1- A função Math.random() gera um número aleatório entre 0 e 1.
+    2- Multiplicamos esse número por 100 e somamos 1, assim obtemos um número aleatório entre 1 e 100.
+    3- O parseInt é usado para garantir que o número gerado seja um inteiro.
+
+O return dentro da função faz com que, quando chamarmos a variável numeroSecreto, ela nos retorne um valor aleatório dentro do intervalo desejado.
+
+5- Quinta aula: Tipo booleano.
+
+**Objetivo:** Comparar o número que o usuário chutou com o número secreto.
+
+**Exemplo:** No nosso HTML, temos uma tag <input> para o usuário inserir um valor entre 1 e 100. Quando o usuário faz um chute, esse valor é capturado e comparado com o número secreto. No JavaScript, dentro da função verificarChute (que é onde está o botão para realizar o chute), criamos uma variável que recebe o valor inserido pelo usuário.
+
+    let chute = document.querySelector('input').value;
+    console.log(chute == numeroSecreto);
+
+**Explicação:** 
+
+    1- document.querySelector('input').value: Acessa o valor inserido pelo usuário no campo <input>.
+    2- chute == numeroSecreto: Compara o valor do chute com o número secreto e retorna true (verdadeiro) se forem iguais, ou false (falso) se forem diferentes.
+
+Esse código exibe no console se o chute do usuário é correto, ou seja, se o valor inserido é igual ao número secreto.
