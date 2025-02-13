@@ -174,9 +174,9 @@ se o usuario errar, ira aparecer a mensagem o numero secreto é menor ou maior d
 
 **Explicação do Código:**
 
-1. Captura do Chute: A função começa capturando o valor inserido pelo usuário no campo de input.
-2. Verificação de Acerto: Se o chute for igual ao número secreto, a mensagem de acerto é exibida.
-3. Verificação de Erro: Caso contrário, o código verifica se o chute é maior ou menor que o número secreto e exibe a mensagem correspondente.
+ 1. Captura do Chute: A função começa capturando o valor inserido pelo usuário no campo de input.
+ 2. Verificação de Acerto: Se o chute for igual ao número secreto, a mensagem de acerto é exibida.
+ 3. Verificação de Erro: Caso contrário, o código verifica se o chute é maior ou menor que o número secreto e exibe a mensagem correspondente.
 
 7. Sétima aula: Contando tentativas.
 **Objetivo:** O objetivo dessa aula é contar quantas tentativas o usuário teve até descobrir o número secreto. Após o usuário acertar, será exibido o número total de tentativas feitas.
