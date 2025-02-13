@@ -348,6 +348,7 @@ No final da função reiniciarJogo(), adicionamos o seguinte código:
 3. A função exibirMensagemInicial() é chamada para exibir as mensagens de introdução.
 4. O botão de "Novo Jogo" é desabilitado até que o jogador acerte o número secreto.
 
+
 10. Décima aula: Implementando a Lista de Números Sorteados.
 
 **Objetivo:** Adicionar uma lista dos números sorteados ao nosso projeto, para que possamos acompanhar os números que já foram gerados.
@@ -389,6 +390,7 @@ Se o número não tiver sido sorteado antes, adicione-o à lista de números sor
 
 1. A variável listaDeNumerosSorteados é onde armazenamos os números sorteados.
 2. A função gerarNumeroAleatorio() gera um número aleatório e verifica se ele já existe na lista. Se não existir, o número é adicionado à lista e retornado.    
+
 
 11. Décima primeira aula: Limitando os números sorteados.
 
