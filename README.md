@@ -347,3 +347,91 @@ No final da função reiniciarJogo(), adicionamos o seguinte código:
 2. A função reiniciarJogo() é chamada, gerando um novo número secreto, limpando o campo de entrada e reiniciando o contador de tentativas.
 3. A função exibirMensagemInicial() é chamada para exibir as mensagens de introdução.
 4. O botão de "Novo Jogo" é desabilitado até que o jogador acerte o número secreto.
+
+10. Décima aula: Implementando a Lista de Números Sorteados.
+
+**Objetivo:** Adicionar uma lista dos números sorteados ao nosso projeto, para que possamos acompanhar os números que já foram gerados.
+
+**Passo a passo:**
+1. Criar a variável para armazenar a lista:
+
+Vá até a primeira linha do código e crie uma variável para armazenar a lista dos números sorteados.
+
+2. Alterar a função de geração de número aleatório:
+
+Na função que gera os números aleatórios, remova o return e, em vez disso, armazene o número gerado em uma variável chamada numeroEscolhido.
+
+3. Verificar se o número já foi sorteado:
+
+Verifique se o número escolhido já existe na lista de números sorteados. Se existir, chame a função novamente para gerar outro número.
+
+4. Adicionar o número à lista:
+
+Se o número não tiver sido sorteado antes, adicione-o à lista de números sorteados e retorne o número gerado.
+
+**Exemplo do passo a passo:**
+
+    let listaDeNumerosSorteados = []; // Lista para armazenar os números sorteados
+
+    function gerarNumeroAleatorio() {
+        let numeroEscolhido = parseInt(Math.random() * 100 + 1); // Gera um número aleatório entre 1 e 100
+
+        // Verifica se o número já foi sorteado
+        if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
+            return gerarNumeroAleatorio(); // Se já foi sorteado, gera outro número
+        } else {
+            listaDeNumerosSorteados.push(numeroEscolhido); // Adiciona o número à lista
+            return numeroEscolhido; // Retorna o número gerado
+        }
+    }
+
+**Explicação do Código:**
+
+1. A variável listaDeNumerosSorteados é onde armazenamos os números sorteados.
+2. A função gerarNumeroAleatorio() gera um número aleatório e verifica se ele já existe na lista. Se não existir, o número é adicionado à lista e retornado.    
+
+11. Décima primeira aula: Limitando os números sorteados.
+
+**Objetivo:** Limitar o número de números sorteados em nosso projeto. Quando atingirmos o número máximo de números sorteados, a lista será limpa e a contagem recomeçará.
+
+**Passo a Passo:**
+
+1. Criar a variável de limite:
+
+Defina uma variável chamada limiteNumero que indicará quantos números podem ser sorteados antes de a lista ser limpa e o processo recomeçar.
+
+2. Modificar a função gerarNumeroAleatorio:
+
+Na função gerarNumeroAleatorio, adicione a variável limiteNumero para definir o intervalo dos números sorteados.
+
+Verifique se o número de elementos na lista atingiu o limite. Se sim, limpe a lista para começar a contagem novamente.
+
+**Exemplo:** 
+
+    let listaDeNumerosSorteados = []; // Lista para armazenar os números sorteados
+    let limiteNumero = 100; // Limite de números que podem ser sorteados
+
+    function gerarNumeroAleatorio() {
+        let numeroEscolhido = parseInt(Math.random() * limiteNumero + 1); // Gera um número aleatório entre 1 e o limite
+
+        // Verifica se a quantidade de elementos na lista atingiu o limite
+        if (listaDeNumerosSorteados.length == limiteNumero) {
+            listaDeNumerosSorteados = []; // Limpa a lista e reinicia a contagem
+        }
+
+        // Verifica se o número já foi sorteado
+        if (listaDeNumerosSorteados.includes(numeroEscolhido)) {
+            return gerarNumeroAleatorio(); // Se já foi sorteado, gera outro número
+        } else {
+            listaDeNumerosSorteados.push(numeroEscolhido); // Adiciona o número à lista
+            return numeroEscolhido; // Retorna o número gerado
+        }
+    }
+
+**Explicação:**
+
+1. limiteNumero: Variável que define o número máximo de elementos que podem ser sorteados antes de limpar a lista e reiniciar o processo.
+
+2. Função gerarNumeroAleatorio(): Agora, ela gera números dentro do limite especificado e verifica se a lista atingiu o limite de números sorteados. Caso tenha atingido, a lista é limpa para recomeçar o sorteio.
+
+3. Limpeza da lista: Quando o número de elementos na lista chega ao limite, a lista é reiniciada com listaDeNumerosSorteados = [].
