@@ -1,7 +1,7 @@
 # Estudos-logica-js-projeto2
  Estudos - Lógica de Programação com JavaScript (Projeto 2)
  
- 1. Primeira aula: Manipulação de textos.
+ 1- Primeira aula: Manipulação de textos.
 
 **Objetivo:** Aprender a manipular textos no HTML utilizando JavaScript.
 
@@ -38,7 +38,7 @@ A explicação é a mesma do exemplo anterior, com o objetivo de modificar o con
     querySelector é uma maneira eficiente de selecionar elementos no DOM, permitindo que você altere o conteúdo, adicione ou remova classes, e muito mais.
     A manipulação do conteúdo usando innerHTML altera o HTML do elemento selecionado. Contudo, em alguns casos, pode ser interessante usar outras propriedades como textContent para evitar problemas de segurança (como injeção de HTML indesejado).
 
-2. Segunda aula: Criando uma função.
+2- Segunda aula: Criando uma função.
 
 **Objetivo:** Aprender a criar uma função em JavaScript e vinculá-la a um evento de clique em um botão no HTML.
 
@@ -77,7 +77,7 @@ A explicação é a mesma do exemplo anterior, com o objetivo de modificar o con
     }
 No caso do exemplo acima, verificarChute() é o nome da função, e dentro dela colocamos o código que será executado sempre que ela for chamada.
 
-3. Terceira aula: Funções com parâmetros.
+3- Terceira aula: Funções com parâmetros.
 
 **Objetivo:** Evitar a repetição de código utilizando funções.
 
@@ -98,7 +98,7 @@ Com essa função, podemos passar a tag HTML e o texto como parâmetros, evitand
 
 Isso torna o código mais compacto, organizado e fácil de entender, já que não precisamos repetir a mesma lógica para cada novo elemento. O código fica mais limpo e fácil de manter.
 
-4. Quarta aula: Funções com retorno.
+4- Quarta aula: Funções com retorno.
 
 **Objetivo:** Vamos criar uma função para gerar um número aleatorio para nosso jogo.
 
@@ -120,7 +120,7 @@ Agora, vamos criar a função gerarNumeroAleatorio que retorna um número aleat�
 
 O return dentro da função faz com que, quando chamarmos a variável numeroSecreto, ela nos retorne um valor aleatório dentro do intervalo desejado.
 
-5. Quinta aula: Tipo booleano.
+5- Quinta aula: Tipo booleano.
 
 **Objetivo:** Comparar o número que o usuário chutou com o número secreto.
 
@@ -136,7 +136,7 @@ O return dentro da função faz com que, quando chamarmos a variável numeroSecr
 
 Esse código exibe no console se o chute do usuário é correto, ou seja, se o valor inserido é igual ao número secreto.
 
-6. Sexta aula: Verificando o chute.
+6- Sexta aula: Verificando o chute.
 **Objetivo:** O objetivo dessa aula é permitir que a máquina verifique o chute do usuário e forneça uma resposta adequada, informando se o usuário acertou ou não o número secreto.
 
 **Descrição:** A função verificarChute realiza a verificação do número fornecido pelo usuário. Se o usuário acertar o número secreto, uma mensagem de "Parabéns" será exibida. Caso contrário, o sistema informa se o número secreto é maior ou menor que o chute do usuário, ajudando-o a tentar novamente.
@@ -178,7 +178,7 @@ se o usuario errar, ira aparecer a mensagem o numero secreto é menor ou maior d
  2. Verificação de Acerto: Se o chute for igual ao número secreto, a mensagem de acerto é exibida.
  3. Verificação de Erro: Caso contrário, o código verifica se o chute é maior ou menor que o número secreto e exibe a mensagem correspondente.
 
-7. Sétima aula: Contando tentativas.
+7- Sétima aula: Contando tentativas.
 **Objetivo:** O objetivo dessa aula é contar quantas tentativas o usuário teve até descobrir o número secreto. Após o usuário acertar, será exibido o número total de tentativas feitas.
 
 **Descrição:**
@@ -218,7 +218,7 @@ Exemplo de mensagem: "Parabéns, você descobriu o número secreto com X tentati
         }
     }
 
-8. Oitava aula: Implementação do Botão de reiniciar.
+8- Oitava aula: Implementação do Botão de reiniciar.
 
 **Objetivo:** O objetivo desta funcionalidade é permitir que o número secreto seja reiniciado a cada tentativa de chute, seja no caso de erro ou quando o jogador acerta o número. Isso garantirá que, ao errar, o campo de entrada para o chute seja limpo automaticamente, e, ao acertar, o botão de "Novo Jogo" se torne habilitado para o usuário começar uma nova partida com um número aleatório.
 
@@ -284,7 +284,7 @@ Essa linha de código garante que o botão de reinício ficará disponível para
 
 Com essas modificações, o jogo fica mais dinâmico e interativo, permitindo uma experiência mais fluida para o jogador.
 
-9. Nona aula: Reiniciando o jogo.
+9- Nona aula: Reiniciando o jogo.
 
 **Objetivo:** Fazer com que o botão "Novo Jogo" reinicie o jogo, sorteando um novo número secreto e permitindo que o jogo comece novamente.
 
@@ -349,7 +349,7 @@ No final da função reiniciarJogo(), adicionamos o seguinte código:
  4. O botão de "Novo Jogo" é desabilitado até que o jogador acerte o número secreto.
 
 
-10. Décima aula: Implementando a Lista de Números Sorteados.
+10- Décima aula: Implementando a Lista de Números Sorteados.
 
 **Objetivo:** Adicionar uma lista dos números sorteados ao nosso projeto, para que possamos acompanhar os números que já foram gerados.
 
@@ -391,7 +391,7 @@ Se o número não tiver sido sorteado antes, adicione-o à lista de números sor
  1. A variável listaDeNumerosSorteados é onde armazenamos os números sorteados.
  2. A função gerarNumeroAleatorio() gera um número aleatório e verifica se ele já existe na lista. Se não existir, o número é adicionado à lista e retornado.    
 
-11. Décima primeira aula: Limitando os números sorteados.
+11- Décima primeira aula: Limitando os números sorteados.
 
 **Objetivo:** Limitar o número de números sorteados em nosso projeto. Quando atingirmos o número máximo de números sorteados, a lista será limpa e a contagem recomeçará.
 
