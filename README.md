@@ -1,5 +1,5 @@
-# Estudos-logica-js-projeto2
- Estudos - Lógica de Programação com JavaScript (Projeto 2)
+# logica-programacao-javascript-parte-2.
+Lógica de Programação com JavaScript (Parte 2)
  
  1- Primeira aula: Manipulação de textos.
 
