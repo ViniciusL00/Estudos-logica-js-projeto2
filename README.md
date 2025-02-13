@@ -343,10 +343,10 @@ No final da função reiniciarJogo(), adicionamos o seguinte código:
 
 **Resumo do fluxo:**
 
-1. O jogador clica no botão "Novo Jogo".
-2. A função reiniciarJogo() é chamada, gerando um novo número secreto, limpando o campo de entrada e reiniciando o contador de tentativas.
-3. A função exibirMensagemInicial() é chamada para exibir as mensagens de introdução.
-4. O botão de "Novo Jogo" é desabilitado até que o jogador acerte o número secreto.
+ 1. O jogador clica no botão "Novo Jogo".
+ 2. A função reiniciarJogo() é chamada, gerando um novo número secreto, limpando o campo de entrada e reiniciando o contador de tentativas.
+ 3. A função exibirMensagemInicial() é chamada para exibir as mensagens de introdução.
+ 4. O botão de "Novo Jogo" é desabilitado até que o jogador acerte o número secreto.
 
 
 10. Décima aula: Implementando a Lista de Números Sorteados.
@@ -388,9 +388,8 @@ Se o número não tiver sido sorteado antes, adicione-o à lista de números sor
 
 **Explicação do Código:**
 
-1. A variável listaDeNumerosSorteados é onde armazenamos os números sorteados.
-2. A função gerarNumeroAleatorio() gera um número aleatório e verifica se ele já existe na lista. Se não existir, o número é adicionado à lista e retornado.    
-
+ 1. A variável listaDeNumerosSorteados é onde armazenamos os números sorteados.
+ 2. A função gerarNumeroAleatorio() gera um número aleatório e verifica se ele já existe na lista. Se não existir, o número é adicionado à lista e retornado.    
 
 11. Décima primeira aula: Limitando os números sorteados.
 
