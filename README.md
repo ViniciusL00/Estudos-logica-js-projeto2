@@ -436,3 +436,41 @@ Verifique se o número de elementos na lista atingiu o limite. Se sim, limpe a l
 2. Função gerarNumeroAleatorio(): Agora, ela gera números dentro do limite especificado e verifica se a lista atingiu o limite de números sorteados. Caso tenha atingido, a lista é limpa para recomeçar o sorteio.
 
 3. Limpeza da lista: Quando o número de elementos na lista chega ao limite, a lista é reiniciada com listaDeNumerosSorteados = [].
+
+12- Décima segunda aula: Speech.
+
+**Objetivo:** Ativar o responsiveVoice para permitir que o jogo "fale" o conteúdo exibido na tela.
+
+**Descrição:** Vamos integrar a funcionalidade de fala ao nosso jogo usando a API responsiveVoice. Isso permitirá que o texto exibido na tela também seja lido em voz alta, criando uma experiência mais interativa.
+
+**Exemplo:** Vamos modificar a função exibirTextoNaTela para que, sempre que um texto for exibido, ele também seja pronunciado.
+
+    function exibirTextoNaTela(tag, texto) {
+        let campo = document.querySelector(tag);
+        campo.innerHTML = texto;  // Exibe o texto na tela
+        responsiveVoice.speak(texto, 'Brazilian Portuguese Female', { rate: 1.2 });  // Pronuncia o texto
+    }
+
+**Como funciona:**
+
+1. A função exibirTextoNaTela exibe o texto dentro de um elemento HTML indicado pela tag.
+2. Além disso, a função utiliza o responsiveVoice.speak() para ler o texto em voz alta, com a voz feminina em português brasileiro e uma taxa de fala ajustada para 1.2.
+
+Com isso, o jogo não apenas exibe o texto na tela, mas também o comunica ao jogador, tornando a experiência mais acessível e envolvente.
+
+Para simplificar, podemos remover a referência ao responsiveVoice da linha 7 do nosso HTML. Além disso, no JavaScript, podemos atualizar a função exibirTextoNaTela da seguinte maneira:
+
+    function exibirTextoNaTela(tag, texto) {
+        let campo = document.querySelector(tag);
+        campo.innerHTML = texto;
+        if ('speechSynthesis' in window) {
+            let utterance = new SpeechSynthesisUtterance(texto);
+            utterance.lang = 'pt-BR'; 
+            utterance.rate = 1.9; 
+            window.speechSynthesis.speak(utterance); 
+        } else {
+            console.log("Web Speech API não suportada neste navegador.");
+        }
+    }
+
+Essa modificação permite que o texto seja lido em voz alta diretamente pelo navegador, utilizando a API de síntese de fala, caso seja compatível.
